@@ -1,0 +1,16 @@
+{
+  "name": "floating-youtube",
+  "version": "2.4.0",
+  "description": "Auto float video to corner when it's not in user's view.",
+  "main": "index.js",
+  "repository": "https://github.com/realdennis/Floating-Youtube.git",
+  "author": "realdennis <evolon688@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0"
+  },
+  "scripts":{
+    "build":"rm -rf dist/ && mkdir dist &&  cp src/manifest.json dist/ && cp src/icon.png dist/ && parcel build src/index.js"
+  }
+}

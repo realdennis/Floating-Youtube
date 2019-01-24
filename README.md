@@ -5,3 +5,10 @@
 Auto float video to corner when it's not in user's view. 
 
 ![](https://i.imgur.com/dIj4zLd.png)
+
+
+## How to build?
+
+```
+npm run build 
+```
