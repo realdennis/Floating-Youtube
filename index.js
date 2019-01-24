@@ -5,12 +5,10 @@
     let style = document.createElement('style');
     style.innerHTML = `
   .float-video{
-  left: unset !important;
+  all:unset !important;
   right: 20px !important;
-  top: unset !important;
   bottom: 20px !important;
-  width: 398px !important;
-  height: 224px !important;
+  width: 30vw !important;
   position: fixed !important;
   }
   `;
@@ -36,7 +34,7 @@
       if (!inViewPort && !video.className.includes('float-video'))
         video.className += ' float-video';
       if (inViewPort && video.className.includes('float-video'))
-        video.className = video.className.replace('float-video', '');
+        video.className = video.className.replace(' float-video', '');
     };
 
     window.addEventListener('scroll', debounce(switcher));
