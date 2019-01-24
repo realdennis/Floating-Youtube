@@ -20,7 +20,7 @@
     const debounce = (fn, delay = 100) => {
       let timer = null;
       return function() {
-        if (timer) return;
+        if (timer !== null) clearTimeout(timer);
         timer = setTimeout(() => {
           fn.apply(this, arguments);
           timer = null;
@@ -39,7 +39,7 @@
         video.className = video.className.replace('float-video', '');
     };
 
-    window.addEventListener('scroll', debounce(switcher, 500));
+    window.addEventListener('scroll', debounce(switcher));
   };
   if (location.href.includes('watch')) float_video();
   else {
