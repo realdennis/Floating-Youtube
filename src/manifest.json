@@ -1,9 +1,7 @@
 {
   "name": "Floating Youtube",
   "description": "[Youtube] Auto float video to corner when it's not in user's view.",
-  "version": "2.5",
-  "background": {},
-  "browser_action": {},
+  "version": "2.5.2",
   "manifest_version": 2,
   "content_scripts": [
     {
