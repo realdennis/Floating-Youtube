@@ -1,4 +1,5 @@
 let floatStyle = document.createElement('style');
+floatStyle.id = 'floatStyle';
 floatStyle.innerHTML = `
 .float-video{
 all:unset !important;
