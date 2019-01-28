@@ -1,6 +1,6 @@
 {
   "name": "floating-youtube",
-  "version": "2.5.2",
+  "version": "2.5.3",
   "description": "Auto float video to corner when it's not in user's view.",
   "main": "index.js",
   "repository": "https://github.com/realdennis/Floating-Youtube.git",
